@@ -3,6 +3,12 @@ body {
   margin: 0;
   background: #f9f9f9;
   color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background: #181818;
+  color: #f1f1f1;
 }
 
 header {
@@ -10,6 +16,11 @@ header {
   color: #fff;
   padding: 1.5rem 0;
   text-align: center;
+  transition: background 0.3s;
+}
+
+body.dark-mode header {
+  background: #222;
 }
 
 nav ul {
@@ -27,6 +38,19 @@ nav a {
   font-weight: bold;
 }
 
+.theme-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.theme-btn:hover {
+  color: #ffd700;
+}
+
 main {
   max-width: 700px;
   margin: 2rem auto;
@@ -34,6 +58,12 @@ main {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode main {
+  background: #232323;
+  color: #f1f1f1;
 }
 
 section {
@@ -42,6 +72,27 @@ section {
 
 h2 {
   color: #4a90e2;
+  transition: color 0.3s;
+}
+
+body.dark-mode h2 {
+  color: #ffd700;
+}
+
+.about-btn, .project-btn {
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+
+.about-btn:hover, .project-btn:hover {
+  background: #357ab8;
 }
 
 form {
@@ -78,4 +129,10 @@ footer {
   background: #eee;
   color: #555;
   margin-top: 2rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode footer {
+  background: #232323;
+  color: #aaa;
 }
