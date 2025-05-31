@@ -8,19 +8,22 @@
 </head>
 <body>
   <header>
-    <h1>Aastha Bhalla</h1>
+    <h1 id="main-title">Aastha Bhalla</h1>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="https://in.linkedin.com/in/aastha-bhalla-555b571a4" target="_blank" rel="noopener" class="linkedin-link">LinkedIn</a></li>
+        <li><button id="toggle-theme" class="theme-btn">🌙</button></li>
       </ul>
     </nav>
   </header>
   <main>
     <section id="about">
       <h2>About Me</h2>
-      <p>Hello! I'm Aastha, a passionate web developer. I love building beautiful and functional websites.</p>
+      <p>Hello! I'm Aastha, a passionate web developer. I love building beautiful and functional websites. <span id="more-about" style="display:none;">I specialize in front-end development, enjoy learning new technologies, and love collaborating on creative projects. In my free time, I explore UI/UX trends and contribute to open source.</span></p>
+      <button id="about-toggle" class="about-btn">Read More</button>
     </section>
     <section id="projects">
       <h2>Projects</h2>
@@ -31,6 +34,14 @@
         <li>
           <strong>Todo App</strong> - A simple todo list app built with JavaScript.
         </li>
+        <li>
+          <strong>Weather Dashboard</strong> - Real-time weather updates using a public API.
+        </li>
+      </ul>
+      <button id="show-projects" class="project-btn">Show More Projects</button>
+      <ul id="extra-projects" style="display:none;">
+        <li><strong>Blog Platform</strong> - A minimal blog with markdown support.</li>
+        <li><strong>Quiz Game</strong> - Interactive quiz with score tracking.</li>
       </ul>
     </section>
     <section id="contact">
@@ -45,7 +56,7 @@
     </section>
   </main>
   <footer>
-    <p>&copy; 2025 Aastha Singh</p>
+    <p>&copy; 2025 Aastha Bhalla | <span id="currentTime"></span></p>
   </footer>
   <script src="script.js"></script>
 </body>
