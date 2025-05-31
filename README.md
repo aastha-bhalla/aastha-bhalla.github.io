@@ -21,7 +21,7 @@ This is a simple personal portfolio website built with HTML, CSS, and vanilla Ja
 ## Deploying to GitHub Pages
 1. Create a repository named `aastha.github.io` on GitHub.
 2. Upload all files (`index.html`, `style.css`, `script.js`, and this `README.md`).
-3. Visit `https://aastha.github.io/` to see your live site.
+3. Visit `https://aastha-bhalla.github.io/` to see your live site.
 
 ---
 
