@@ -12,10 +12,11 @@
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="https://in.linkedin.com/in/aastha-bhalla-555b571a4" target="_blank" rel="noopener" class="linkedin-link">LinkedIn</a></li>
-        <li><button id="toggle-theme" class="theme-btn">🌙</button></li>
       </ul>
     </nav>
   </header>
@@ -24,49 +25,219 @@
       <h2>About Me</h2>
       <p>Hello! I'm Aastha Bhalla, a data science enthusiast and web developer passionate about transforming data into actionable insights. I love building beautiful, functional, and data-driven websites and applications.</p>
       <ul>
-        <li><span class="chart-accent"></span><strong>Email:</strong> aastha.bhalla@email.com</li>
+        <li><span class="chart-accent"></span><strong>Email:</strong> aasthabhalla3199@gmail.com</li>
         <li><span class="chart-accent"></span><strong>Location:</strong> New Delhi, India</li>
       </ul>
     </section>
     <section id="education">
       <h2>Education & Qualifications</h2>
       <ul>
-        <li><span class="chart-accent"></span><strong>M.Sc. in Data Science</strong> – Delhi University (2023-2025)</li>
-        <li><span class="chart-accent"></span><strong>B.Sc. in Mathematics (Hons.)</strong> – Delhi University (2020-2023)</li>
-        <li><span class="chart-accent"></span>Certified: Python for Data Science (Coursera, 2023)</li>
-        <li><span class="chart-accent"></span>Certified: Data Visualization with Tableau (2024)</li>
+        <li><span class="chart-accent"></span><strong>M.Sc. Economics</strong> – Indian Institute of Technology, Roorkee (2020-2022)</li>
+        <li><span class="chart-accent"></span><strong>B.Sc. in Mathematics (Hons.)</strong> – Chaudhary Devi Lal University, Sirsa (2016-2019)</li>
+        <li><span class="chart-accent"></span><strong>Post Graduate Diploma in Computer Science and Technology</strong> – Chaudhary Devi Lal University, Sirsa (2016-2019)</li>
       </ul>
+    </section>
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li>
+          <span class="chart-accent"></span>
+          <div class="experience-item">
+            <strong>Cognitive Analyst</strong> – ICICI Bank
+            <div class="experience-duration">July 2022 - Present · 3 years</div>
+            <div class="experience-location">New Delhi, India · On-site</div>
+            <ul class="experience-details">
+              <li>Leading AI/ML initiatives for document processing and customer service automation</li>
+              <li>Developed and deployed three major data science projects:</li>
+              <ul class="project-list">
+                <li onclick="toggleProject(this)">
+                  <strong>Current Account Image Analysis</strong>
+                  <span class="expand-icon">+</span>
+                  <div class="project-details">
+                    <h4>Project Status:</h4>
+                    <p>Deployed and actively used in production, processing thousands of documents daily.</p>
+                    
+                    <h4>Objectives:</h4>
+                    <ul>
+                      <li>Automate the verification of current account documentation</li>
+                      <li>Improve accuracy in document processing</li>
+                      <li>Reduce manual intervention in the auditing process</li>
+                    </ul>
+
+                    <h4>Technical Implementation:</h4>
+                    <ul>
+                      <li>Built robust image processing pipeline using OpenCV for preprocessing</li>
+                      <li>Implemented deep learning models with TensorFlow for document classification</li>
+                      <li>Developed custom OCR solutions for handling various document formats</li>
+                      <li>Created automated quality assessment algorithms for image inputs</li>
+                    </ul>
+
+                    <h4>Business Impact:</h4>
+                    <ul>
+                      <li>Reduced document processing time by 70%</li>
+                      <li>Improved accuracy to 95% in document verification</li>
+                      <li>Significantly reduced manual workload for the auditing team</li>
+                    </ul>
+                  </div>
+                </li>
+                <li onclick="toggleProject(this)">
+                  <strong>Financial Document Summarization</strong>
+                  <span class="expand-icon">+</span>
+                  <div class="project-details">
+                    <h4>Project Status:</h4>
+                    <p>Successfully implemented and being used by the credit team for document analysis.</p>
+                    
+                    <h4>Objectives:</h4>
+                    <ul>
+                      <li>Automate the summarization of CIBIL and GST reports</li>
+                      <li>Extract key financial metrics and insights</li>
+                      <li>Streamline the credit assessment process</li>
+                    </ul>
+
+                    <h4>Technical Implementation:</h4>
+                    <ul>
+                      <li>Developed custom NLP pipelines for financial document processing</li>
+                      <li>Integrated Large Language Models for context-aware summarization</li>
+                      <li>Created structured output formats for easy integration</li>
+                      <li>Implemented secure handling of sensitive financial data</li>
+                    </ul>
+
+                    <h4>Business Impact:</h4>
+                    <ul>
+                      <li>Reduced document review time by 60%</li>
+                      <li>Improved consistency in credit assessment</li>
+                      <li>Enhanced compliance with regulatory requirements</li>
+                    </ul>
+                  </div>
+                </li>
+                <li onclick="toggleProject(this)">
+                  <strong>Speech to Text Analytics Platform</strong>
+                  <span class="expand-icon">+</span>
+                  <div class="project-details">
+                    <h4>Project Status:</h4>
+                    <p>Deployed across multiple customer service centers, processing thousands of calls daily.</p>
+                    
+                    <h4>Objectives:</h4>
+                    <ul>
+                      <li>Convert customer call recordings to searchable text</li>
+                      <li>Enable multi-language support for diverse customer base</li>
+                      <li>Generate automated KPIs from customer interactions</li>
+                      <li>Implement robust noise cancellation</li>
+                    </ul>
+
+                    <h4>Technical Implementation:</h4>
+                    <ul>
+                      <li>Built custom audio preprocessing pipeline with noise reduction</li>
+                      <li>Implemented Whisper ASR for multi-language speech recognition</li>
+                      <li>Developed sentiment analysis for customer satisfaction tracking</li>
+                      <li>Created automated KPI generation system</li>
+                    </ul>
+
+                    <h4>Business Impact:</h4>
+                    <ul>
+                      <li>Achieved 90% accuracy in speech-to-text conversion</li>
+                      <li>Enabled analysis of 100% of customer calls</li>
+                      <li>Reduced manual call review time by 80%</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <li>Collaborated with cross-functional teams to integrate AI solutions into existing banking systems</li>
+              <li>Implemented data security measures for handling sensitive financial information</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <span class="chart-accent"></span>
+          <div class="experience-item">
+            <strong>Cultural Secretary</strong> – Sarojini Bhawan, IIT Roorkee
+            <div class="experience-duration">January 2022 - June 2022 · 6 months</div>
+            <ul class="experience-details">
+              <li>Successfully organized Cultural Day events at Sarojini Bhawan</li>
+              <li>Led the development and maintenance of the official Sarojini Bhawan website (<a href="https://www.iitr.ac.in/sarojinibhawan/index.html" target="_blank" rel="noopener">www.iitr.ac.in/sarojinibhawan</a>)</li>
+              <li>Coordinated cultural activities and events for hostel residents</li>
+              <li>Enhanced digital presence through website development and management</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <span class="chart-accent"></span>
+          <div class="experience-item">
+            <strong>Business Development Intern</strong> – Floxus
+            <div class="experience-duration">October 2021 - December 2021 · 3 months</div>
+            <ul class="experience-details">
+              <li>Contributed to business growth strategies and market analysis</li>
+              <li>Assisted in developing and implementing business development initiatives</li>
+              <li>Collaborated with cross-functional teams to achieve business objectives</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section id="hobbies">
+      <h2>Hobbies & Interests</h2>
+      <div class="hobbies-grid">
+        <div class="hobby-item">
+          <span class="hobby-icon">🎨</span>
+          <h3>Painting</h3>
+          <p>Expressing creativity through colors and canvas</p>
+        </div>
+        <div class="hobby-item">
+          <span class="hobby-icon">🌱</span>
+          <h3>Gardening</h3>
+          <p>Nurturing plants and creating green spaces</p>
+        </div>
+        <div class="hobby-item">
+          <span class="hobby-icon">📚</span>
+          <h3>Learning</h3>
+          <p>Constantly exploring new skills and knowledge</p>
+        </div>
+        <div class="hobby-item">
+          <span class="hobby-icon">✈️</span>
+          <h3>Travelling</h3>
+          <p>Exploring new places and cultures</p>
+        </div>
+      </div>
     </section>
     <section id="skills">
       <h2>Skills</h2>
       <ul>
-        <li><span class="chart-accent"></span>Python, R, SQL</li>
-        <li><span class="chart-accent"></span>Pandas, NumPy, scikit-learn, Matplotlib, Seaborn</li>
-        <li><span class="chart-accent"></span>Machine Learning, Data Visualization, Statistics</li>
-        <li><span class="chart-accent"></span>Tableau, Power BI</li>
-        <li><span class="chart-accent"></span>HTML, CSS, JavaScript, Git</li>
+        <li><span class="chart-accent"></span><strong>Programming:</strong> Python, R, SQL, JavaScript, HTML, CSS</li>
+        <li><span class="chart-accent"></span><strong>Data Science & ML:</strong> Pandas, NumPy, scikit-learn, TensorFlow, Machine Learning, Statistics</li>
+        <li><span class="chart-accent"></span><strong>Computer Vision:</strong> OpenCV, Image Processing, Feature Engineering</li>
+        <li><span class="chart-accent"></span><strong>NLP & Speech Processing:</strong> Hugging Face Transformers, spaCy, NLTK, Whisper ASR, PyDub</li>
+        <li><span class="chart-accent"></span><strong>Data Visualization:</strong> Matplotlib, Seaborn, Tableau, Power BI, D3.js</li>
+        <li><span class="chart-accent"></span><strong>Development Tools:</strong> Git, Flask, PyPDF2</li>
       </ul>
     </section>
     <section id="projects">
-      <h2>Projects & Work</h2>
-      <ul>
+      <h2>Other Projects</h2>
+      <ul class="projects-list">
         <li>
-          <span class="chart-accent"></span><strong>Portfolio Website</strong> – This interactive website, built with HTML, CSS, and JavaScript, showcases my skills and projects.
-        </li>
-        <li>
-          <span class="chart-accent"></span><strong>Sales Forecasting Model</strong> – Developed a machine learning model in Python to predict bakery sales using regression techniques. Improved forecast accuracy by 18%.
-        </li>
-        <li>
-          <span class="chart-accent"></span><strong>Customer Segmentation</strong> – Used K-means clustering on retail data to identify customer segments and inform marketing strategies.
-        </li>
-        <li>
-          <span class="chart-accent"></span><strong>Web Traffic Dashboard</strong> – Built an interactive dashboard in Tableau to visualize and analyze website traffic trends for a local business.
-        </li>
-        <li>
-          <span class="chart-accent"></span><strong>Sentiment Analysis App</strong> – Created a web app using Flask and scikit-learn to analyze and visualize sentiment from product reviews.
-        </li>
-        <li>
-          <span class="chart-accent"></span><strong>Data Visualization Gallery</strong> – A collection of custom data visualizations using D3.js and Matplotlib.
+          <span class="chart-accent"></span>
+          <div class="project-header" onclick="toggleProject(this)">
+            <strong>Personal Portfolio Website</strong>
+            <span class="expand-icon">+</span>
+          </div>
+          <div class="project-details">
+            <p class="project-summary">Designed and developed a responsive personal portfolio website using modern web technologies.</p>
+            <div class="project-expanded">
+              <h4>Key Features:</h4>
+              <ul>
+                <li>Responsive design that works across all devices</li>
+                <li>Dark/Light theme toggle with persistent preferences</li>
+                <li>Interactive project showcases with expandable details</li>
+                <li>Modern UI/UX with smooth animations</li>
+              </ul>
+              <h4>Technical Details:</h4>
+              <ul>
+                <li>Technologies: HTML5, CSS3, JavaScript</li>
+                <li>Implemented CSS Grid and Flexbox for layouts</li>
+                <li>Used LocalStorage for theme persistence</li>
+                <li>Optimized for performance and accessibility</li>
+              </ul>
+            </div>
+          </div>
         </li>
       </ul>
     </section>
